@@ -11,16 +11,18 @@ $(document).ready(() =>{
     $('#work1 > .col-sm-3 > *').text('Mon Projet');// remplacer tout les <p> de la premiere ligne d'images par un "Mon projet"
     rename(); // numéroter chaque <p>
     $('img[src="https://placehold.it/150x80?text=IMAGE"]').attr('src','mtFuji.jpg');// Changer toute les images du projet par une autre
-    $('#work1 > div:nth-child(1) > img').clone().attr('src','lakeTanuki.png').css({ 'height': '500px' }).appendTo('body').insertBefore('#work1'); /* clone d'une div contenant un <p> et un <img src>
+    $('#work1 > div:nth-child(1) > img').clone().attr('src','images/lakeTanuki.png').css({ 'height': '500px' }).appendTo('body').insertBefore('#work1'); /* clone d'une div contenant un <p> et un <img src>
      modif de l'image et postionnement de la div avant l'id work1 */
     
 });
-//Petit bonus : ajouter le numéro du projet à chaque projet
+//Petit bonus : ajouter le numéro du projet à chaque projet | mettre différentes images
 function rename() {
-    var i = 0;
-    $('.col-sm-3 > p').each(function () {
+    var i = 1;
+    $('.col-sm-3').each(function () {
  
-        $(this).text('Mon projet' + ' '+i);
+        $(this).find('p').text('Mon projet' + ' '+i);
+        $(this).find('img').attr('src', 'images/' + i +'.jpg');
+        
  
         i++
     })
