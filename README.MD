@@ -161,3 +161,4 @@ Exemple de plugins :
 
 **Bingo**: Recoder les plugins que vous avez choisis.
 
+https://oscarotero.com/jquery/
