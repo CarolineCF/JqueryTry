@@ -12,11 +12,14 @@ $(document).ready(() => {
         $('#userChoice').text($choice)
         $('#computerChoice').text($computChoice);
         $('#winner').text($winner);
-
+        if ($winner === 'You won') {
+            $('#winner').css({'color':'green', 'font-weight' : 'bold'})
+        } else if ($winner === 'You lose') {
+         $('#winner').css({'color':'red', 'font-weight' : 'bold'})
+        } else {
+            $('#winner').css({'color':'grey', 'font-weight' : 'bold'})
+        }
     });
-
-
-
 });
 
 
@@ -56,19 +59,19 @@ function determineWinner(userChoice, computerChoice) {
         if (computerChoice === 'scissors') {
             return 'You won';
         } else {
-            return 'You lost';
+            return 'You lose';
         }
     }
     else if (userChoice === 'paper') {
         if (computerChoice === 'scissors') {
-            return 'You lost';
+            return 'You lose';
         } else {
             return 'You won';
         }
     }
     else if (userChoice === 'scissors')
         if (computerChoice === 'rock') {
-            return 'You lost';
+            return 'You lose';
         } else {
             return 'You won';
         }
