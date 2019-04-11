@@ -20,6 +20,8 @@ $(document).ready(() => {
             $('#winner').css({'color':'grey', 'font-weight' : 'bold'})
         }
     });
+   
+    $("body").css("background", "url('images/bk1.jpg')");
 });
 
 
