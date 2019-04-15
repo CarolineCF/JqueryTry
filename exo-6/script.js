@@ -6,7 +6,7 @@ $(document).ready(() => {
     var divAlert = ('#alertEmpty');
     var divAlertPass = ('#alertPass');
     var divPass6 = ('#Pass6');
-    var emailRegex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;;
+    var emailRegex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
 
 
