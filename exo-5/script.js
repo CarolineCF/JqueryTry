@@ -9,7 +9,7 @@ $(document).ready(() => {
         var $computChoice = getComputerChoice()
         var $winner = determineWinner($choice, $computChoice)
 
-        $('#userChoice').text($choice)
+        $('#userChoice').text($choice) // #id div result
         $('#computerChoice').text($computChoice);
         $('#winner').text($winner);
         if ($winner === 'You won') {
